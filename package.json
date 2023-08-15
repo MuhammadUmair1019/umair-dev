@@ -1,7 +1,7 @@
 {
-  "name": "umair",
+  "name": "umair_dev",
   "version": "1.0.0",
   "bin": {
-    "umair": "index.js"
+    "umair_dev": "index.js"
   }
 }
