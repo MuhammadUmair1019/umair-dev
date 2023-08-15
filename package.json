@@ -1,0 +1,7 @@
+{
+  "name": "umair",
+  "version": "1.0.0",
+  "bin": {
+    "umair": "index.js"
+  }
+}
