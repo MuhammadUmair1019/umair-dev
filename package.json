@@ -1,6 +1,6 @@
 {
   "name": "umair_dev",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Get to know Umair via `npx umair_dev`.",
   "bin": {
     "umair_dev": "index.js"
