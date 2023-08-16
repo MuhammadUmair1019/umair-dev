@@ -1,6 +1,6 @@
-`npx umiar_dev`
+`npx umair_dev`
 
-> Get to know Muhammad Umair using your line with Node.js
+> Get to know Muhammad Umair using your command line with Node.js
 
 ## Usage
 
