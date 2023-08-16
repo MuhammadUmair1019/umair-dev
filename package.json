@@ -12,5 +12,13 @@
     "umiar dev",
     "umair",
     "dev"
-  ]
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "muhammadumair1019/umair-dev",
+  "author": {
+    "name": "Muhammad Umair",
+    "email": "muhammad.umair1019@gmail.com",
+    "url": "https://portfolio-umair.vercel.app/"
+  }
 }
