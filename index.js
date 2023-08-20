@@ -1,29 +1,27 @@
 #!/usr/bin/env node
-const pkgJSON = require('./package.json')
-const welcome = require('cli-welcome')
-const chalk = require('chalk')
-const log = console.log
-const gray = chalk.gray
-const linkedinClr = chalk.hex('#0a66c2').bold.inverse
-const youtubeClr = chalk.hex('#ff0000').bold.inverse
-const githubClr = chalk.hex('#6cc644').bold.inverse
+const chalk = require('chalk');
+const alert = require('alerta-cli');
 
-welcome({
-  title: pkgJSON.name,
-  tagLine: `Howdy, ncie to meet ya!`,
-  description: pkgJSON.description,
-  version: pkgJSON.version,
-  bgColor: `#0a66c2`,
-  color: `#000000`,
-  bold: true,
-  clear: true,
-})
+const init = require('./utils/init');
 
-log(`${chalk.bgBlue.bold(` Hi there I am Muhammad Umair `)}
+const log = console.log;
+const italic = chalk.italic
+const gray = chalk.gray;
+const linkedinClr = chalk.hex('#0a66c2').bold.inverse;
+const youtubeClr = chalk.hex('#ff0000').bold.inverse;
+const githubClr = chalk.hex('#6cc644').bold.inverse;
 
-Full Stack Developer from Pakisan
+(() => {
+  init();
 
+  log(`${chalk.bgBlue.bold(` Hi there I am Muhammad Umair `)}
+  
+${italic(`Full stack developer from Pakistan. Specializing in building exceptional digital experiences and passion for building complex applications.`)}
+  
 ${linkedinClr(` LinkedIn `)} ${gray(`https://www.linkedin.com/in/muhammad-umair-a6792b199`)}
 ${youtubeClr(` Youtube `)}  ${gray(`https://www.youtube.com/c/UmairtipsStudio/`)}
 ${githubClr(` Github `)}   ${gray(`https://github.com/MuhammadUmair1019/`)}
-`)
+  `);
+
+  alert({ type: 'info', msg: `Check out my Portfolio: https://portfolio-umair.vercel.app/` });
+})();
